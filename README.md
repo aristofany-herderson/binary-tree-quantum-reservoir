@@ -12,6 +12,8 @@
 
 Código e resultados do projeto **"Árvores Binárias Completas como Reservatório Quântico de Quantum Walks"**, desenvolvido na disciplina **IMD0039 – Estruturas de Dados Básicas II** (Instituto Metrópole Digital, UFRN).
 
+<br />
+
 ## 📖 Sobre
 
 Em _quantum reservoir computing_ (QRC), apenas uma leitura linear é treinada sobre um sistema quântico fixo. Aqui, um **quantum walk de tempo contínuo (CTQW)** sobre uma **árvore binária completa** faz o papel de reservatório, e a árvore é armazenada de forma implícita, com **indexação de heap**:
@@ -35,6 +37,8 @@ Em _quantum reservoir computing_ (QRC), apenas uma leitura linear é treinada so
 - Com pesos aleatórios e `H = −A`, a mesma árvore atinge memória linear **11,09**, contra 8,96 do ciclo e 5,02 da ESN.
 - No benchmark **CSE-CIC-IDS2018**, a melhor árvore (`n = 31`, amplitude, `H = L`, `τ = 1,5`) obtém ROC-AUC **0,943**, abaixo das ESNs de 100 e 500 unidades (0,946 e 0,951).
 
+<br />
+
 ## 🗂️ Estrutura do repositório
 
 ```
@@ -44,6 +48,8 @@ Em _quantum reservoir computing_ (QRC), apenas uma leitura linear é treinada so
 ├── binary_tree_ids_benchmark.py  # benchmark de intrusão (CSE-CIC-IDS2018)
 └── qrc_binary_tree.py
 ```
+
+<br />
 
 ## 🧪 Benchmark de detecção de intrusão
 
@@ -80,11 +86,13 @@ python binary_tree_ids_benchmark.py --synthetic --seeds 1 --depths 2 3 --max-tra
 
 O benchmark também roda em arrays do **SLURM** (`SLURM_ARRAY_TASK_ID` e `SLURM_ARRAY_TASK_COUNT` são lidos automaticamente). A execução do projeto foi feita no supercomputador do IMD/UFRN, partição `intel-128`.
 
-> O modelo `XGBoost`, previsto no script, falhou por falta do pacote `xgboost` e por isso aparece como `failed` em `results/`.
+<br />
 
 ## 📊 Resultados completos
 
 Os plots estão em [`plots/`](./plots).
+
+<br />
 
 ## 👥 Autores (Grupo 3 — T05, 2026.2)
 
