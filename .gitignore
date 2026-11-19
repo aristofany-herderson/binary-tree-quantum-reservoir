@@ -1,0 +1,12 @@
+# folders
+paper/
+zips/
+results/
+.vscode/
+
+# files
+main.pdf
+START_HERE.md
+work.pdf
+zip.py
+SKILL.md
